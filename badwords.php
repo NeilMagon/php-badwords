@@ -6,7 +6,13 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 - stampare a schermo il paragrafo e la sua lunghezza
 - stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi 
 (***) tutte le occorrenze della parola da censurare -->
-
+<?php
+    $paragraph = $_GET['paragraph'];
+    $word = $_GET['word'];
+    var_dump($word);
+    $paragraphLength = strlen($paragraph);
+    $paragraphCensored = str_replace($word, '***', $paragraph);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +23,13 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>PHP-Badwords</h1>
+        <h3>Commento</h3>
+        <div>
+            <p> <?php echo $paragraph; ?> </p>
+            <p>Lunghezz di: <?php echo $paragraphLength; ?> caratteri</p>
+        </div>
+    </div>
 </body>
 </html>
