@@ -9,9 +9,9 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 <?php
     $paragraph = $_GET['paragraph'];
     $word = $_GET['word'];
-    var_dump($word);
     $paragraphLength = strlen($paragraph);
-    $paragraphCensored = str_replace($word, '***', $paragraph);
+    $wordCensored = str_replace($word, '***', $word);
+    var_dump($paragraphCensored);
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +30,8 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
             <p> <?php echo $paragraph; ?> </p>
             <p>Lunghezz di: <?php echo $paragraphLength; ?> caratteri</p>
         </div>
+        <h3>Parola censurata</h3>
+        <p> <?php echo $wordCensored; ?> </p>
     </div>
 </body>
 </html>
