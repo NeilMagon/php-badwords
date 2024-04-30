@@ -26,12 +26,14 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
     <div class="container">
         <h1>PHP-Badwords</h1>
         <h3>Commento</h3>
-        <div>
+        <div class="card">
             <p> <?php echo $paragraph; ?> </p>
             <p>Lunghezz di: <?php echo $paragraphLength; ?> caratteri</p>
         </div>
         <h3>Parola censurata</h3>
-        <p> <?php echo $wordCensored; ?> </p>
+        <div class="card">
+            <p> <?php echo $wordCensored; ?> </p>
+        </div>
     </div>
 </body>
 </html>

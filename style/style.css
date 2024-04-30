@@ -52,3 +52,19 @@ button {
     border-radius: 1.875rem;
     cursor: pointer;
 }
+
+h3{
+    margin: 1rem;
+}
+.card {
+    width: 50%;
+    height: 20%;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
